@@ -4,11 +4,11 @@
 ## 使い方
 してない人は`json-server`をインストール
 
-`npm install -g json-server`
+`$ npm install -g json-server`
 
 db.jsonを返すサーバーを立てる
 
-`json-server --watch db.json`
+`$ json-server --watch db.json`
 
 `http://localhost:3000/db`
 にアクセスすると JSON が丸ごと帰ってくるので、今回はこれをTwitterAPIのGet Tweet timelinesからjsonが返ってきたとみなして開発を進めることができた.
