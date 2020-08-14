@@ -1,4 +1,4 @@
-const url = "http://localhost:3000/db";
+const url = "https://api-5tvwyzuz5q-ue.a.run.app/home_timeline?count=5";
 fetch(url)
     .then(res => res.json())
     .then(data => {
