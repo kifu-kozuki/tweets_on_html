@@ -3,25 +3,36 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- <meta name="viewport" content="width=device-width,initial-scale=1"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-    
+    <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-html-shader@0.2.0/dist/aframe-html-shader.min.js"></script>
+    <script src="html2canvas.min.js"></script>
+    <script src="script.js"></script>
     <title>AR Twitter</title>
 </head>
 
 <body>
     <h1>Welcome to AR Twitter</h1>
 
-    <div id="Timeline">
-        
-    </div>
+    <div id="Timeline"></div>
+    
+
+    
+    <a-scene>
+        <a-plane position=" 0 -6 0" width="12" height="30" material="shader:html;target: #artimeline"></a-plane>
+
+        <a-sky color="#DDDDDD"></a-sky>
+        <a-entity camera wasd-controls look-controls position="0 0 20"></a-entity>
+    </a-scene>
 
 
-    <div id="honbun"></div>
 
-    <a href="app.html">App</a>
-    <script src="script.js"></script>
+    <a href="index.html">Top</a>
+
+
+
 </body>
 
 </html>
